@@ -157,9 +157,15 @@ def count_last_n_odds(integers, n):
       :rtype: int
     """
     # ------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # DONE: 3. Implement and test this function.
     #     The testing code is already written for you (above).
     # ------------------------------------------------------------------
+
+    count = 0
+    for k in range((len(integers) - 1), (len(integers) - n - 1), -1):
+        if integers[k] % 2 == 1:
+            count += 1
+    return count
 
 
 # ----------------------------------------------------------------------
