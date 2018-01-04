@@ -72,9 +72,14 @@ def make_simple_list(m, n):
       :type n: int
     """
     # ------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # DONE: 3. Implement and test this function.
     #   Note that you should write its TEST function first (above).
     # ------------------------------------------------------------------
+
+    sequence = []
+    for k in range(m, n + 1):
+        sequence += [k]
+    return sequence
 
 
 def run_test_make_simple_string():
