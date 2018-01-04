@@ -196,9 +196,17 @@ def make_less_simple_string(m, n):
       :type n: int
     """
     # ------------------------------------------------------------------
-    # TODO: 7. Implement and test this function.
+    # DONE: 7. Implement and test this function.
     #   Note that you should write its TEST function first (above).
     # -----------------------------------------------------------------
+
+    sequence = ''
+    for k in range(m, n + 1):
+        sequence += str(k)
+        if k < n:
+            sequence += '-'
+
+    return sequence
 
 
 def run_test_draw_shapes():
