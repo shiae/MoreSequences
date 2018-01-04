@@ -403,7 +403,7 @@ def rectangles_from_circles(circles):
       :rtype: list of rg.Rectangles
     """
     # ------------------------------------------------------------------
-    # TODO: 10. Implement and test this function.
+    # DONE: 10. Implement and test this function.
     #     The testing code is already written for you (above).
     #
     ####################################################################
@@ -415,6 +415,11 @@ def rectangles_from_circles(circles):
     ####################################################################
     # ------------------------------------------------------------------
 
+    rectangles = []
+    for k in range(len(circles)):
+        circle = circles[k]
+        rectangles += [circle.get_bounding_box()]
+    return rectangles
 
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
